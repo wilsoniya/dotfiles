@@ -22,6 +22,6 @@ for file in $FILES; do
 done
 
 echo ""
-echo "Dotfile installation complete complete."
+echo "Dotfile installation complete."
 echo ""
 
