@@ -16,6 +16,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle 'snipmate-snippets'
 Bundle 'molokai'
+Bundle 'ack.vim'
 
 filetype plugin indent on               " required!
 
