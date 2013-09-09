@@ -18,6 +18,7 @@ Bundle 'snipmate-snippets'
 Bundle 'molokai'
 Bundle 'ack.vim'
 Bundle 'The-NERD-Commenter'
+Bundle 'The-NERD-tree'
 
 filetype plugin indent on               " required!
 
