@@ -28,6 +28,12 @@ urxvt*background: black
 urxvt*transparent: true
 urxvt*shading: 15
 
+URxvt*font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso8859-1
+URxvt*boldFont: -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso8859-1 
+
+! URxvt*italicFont:                     fontname
+! URxvt*boldItalicFont:                 fontname
+
 ! URxvt*background: #2B2B2B
 ! URxvt*foreground: #DEDEDE
 ! 

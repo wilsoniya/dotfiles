@@ -22,6 +22,7 @@ Bundle 'wombat256.vim'
 Bundle 'ack.vim'
 Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
+Bundle 'dart-lang/dart-vim-plugin'
 
 filetype plugin indent on               " vundle required!
 
