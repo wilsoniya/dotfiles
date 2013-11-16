@@ -13,3 +13,6 @@ set -o vi
 export EDITOR=vim
 
 export PATH=~/bin:$PATH
+
+# if doge MOTD exists; print it
+type doge &> /dev/null && doge
