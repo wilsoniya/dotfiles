@@ -11,6 +11,8 @@ PS1='[\u@\h \W]\$ '
 set -o vi
 
 export EDITOR=vim
+export WORKON_HOME=~/Devel/python_virtualenvs
+source `which virtualenvwrapper.sh`
 
 export PATH=~/bin:$PATH
 
