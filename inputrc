@@ -1,0 +1,7 @@
+# bash readline customization
+# seealso: http://www.gnu.org/software/bash/manual/html_node/Readline-Init-File.html
+# seealso: http://stackoverflow.com/questions/10394302/how-do-i-use-vi-keys-in-ipython-under-nix
+
+set editing-mode vi
+set keymap vi
+#set convert-meta on
