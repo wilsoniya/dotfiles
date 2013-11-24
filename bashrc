@@ -5,16 +5,30 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+OS=`uname -s`
+
+# add home-local bin dir to PATH if dir exists
+[[ -d ~/bin ]] && export PATH=~/bin:$PATH
+
+if [[ $OS == "Linux" ]]; then
+    # set up Linux specifics
+    alias ls='ls --color=auto'
+elif [[ $OS == "Darwin" ]]; then
+    # set up OS X specifics
+    alias ls='ls -G'
+fi
+
 PS1='[\u@\h \W]\$ '
 
 set -o vi
 
 export EDITOR=vim
-export WORKON_HOME=~/Devel/python_virtualenvs
-source `which virtualenvwrapper.sh`
 
-export PATH=~/bin:$PATH
+if type virtualenvwrapper.sh &> /dev/null; then
+    # set up virtualenvwrapper if installed
+    export WORKON_HOME=~/Devel/python_virtualenvs
+    source `which virtualenvwrapper.sh`
+fi 
 
 # if doge MOTD exists; print it
 type doge &> /dev/null && doge
