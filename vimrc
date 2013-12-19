@@ -23,7 +23,13 @@ Bundle 'ack.vim'
 Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
 Bundle 'dart-lang/dart-vim-plugin'
-Bundle "motus/pig.vim"
+Bundle 'motus/pig.vim'
+Bundle 'w0ng/vim-hybrid' 
+Bundle 'fugitive.vim'
+Bundle 'rking/ag.vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'pythonhelper'
+Bundle 'Syntastic'
 
 filetype plugin indent on               " vundle required!
 
@@ -67,7 +73,8 @@ set t_Co=256                            " allow 256 colors
 "colorscheme mustang
 "colorscheme inkpot
 "colorscheme wombat256
-colorscheme molokai
+"colorscheme molokai
+colorscheme hybrid
 
 set cryptmethod=blowfish                " use strong, blowfish encryption
 
