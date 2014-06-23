@@ -26,6 +26,7 @@ Bundle 'pythonhelper'
 Bundle 'Syntastic'
 Bundle 'Gundo'
 Bundle 'vim-coffee-script'
+Bundle 'tpope/vim-dispatch'
 
 Bundle 'molokai'
 Bundle 'Mustang2'
@@ -102,3 +103,5 @@ nnoremap <leader>ig :GundoToggle<CR>
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim    " for ctrlp
 let NERDTreeIgnore = ['\.pyc$']             " for NERDTree (duh) 
+
+autocmd BufWritePre *.py :%s/\s\+$//e
