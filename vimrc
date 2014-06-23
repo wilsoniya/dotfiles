@@ -25,6 +25,7 @@ Bundle 'rking/ag.vim'
 Bundle 'pythonhelper'
 Bundle 'Syntastic'
 Bundle 'Gundo'
+Bundle 'vim-coffee-script'
 
 Bundle 'molokai'
 Bundle 'Mustang2'
@@ -37,6 +38,10 @@ filetype plugin indent on                   " vundle required!
 
 " Basics
 syntax on                                   " syntax highlighting
+set synmaxcol=200                           " maximum line length for syntax highlighting
+set ttyfast                                 " fast terminal connection
+set ttyscroll=3                             " maximum number of lines to scroll before forcing a redraw
+set lazyredraw                              " the screen will not be redrawn while executing macros, registers and other commands that have not been typed.
 set backspace=indent,eol,start              " bs over autoindent, eol, and start of i-mode.  
 set fileencodings=utf-8,latin1
 set helplang=en
