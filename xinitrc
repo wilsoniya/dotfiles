@@ -5,6 +5,6 @@ xset fp rehash
 pulseaudio --start &
 clipit -d &
 xscreensaver &
+xss-lock -- xscreensaver-command -lock &
 
 exec i3
-

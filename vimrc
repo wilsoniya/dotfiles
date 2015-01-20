@@ -18,17 +18,19 @@ Bundle "honza/vim-snippets"
 Bundle 'ack.vim'
 Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
-Bundle 'dart-lang/dart-vim-plugin'
-Bundle 'motus/pig.vim'
 Bundle 'fugitive.vim'
 Bundle 'rking/ag.vim'
 Bundle 'pythonhelper'
 Bundle 'Syntastic'
 Bundle 'Gundo'
-Bundle 'vim-coffee-script'
 Bundle 'tpope/vim-dispatch'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'tpope/vim-surround'
+
+Bundle 'motus/pig.vim'
+Bundle 'dart-lang/dart-vim-plugin'
+Bundle 'vim-coffee-script'
+Bundle 'mitsuhiko/vim-jinja'
 
 Bundle 'molokai'
 Bundle 'Mustang2'
@@ -104,12 +106,13 @@ inoremap <F5> <C-r>=system('uuidgen -r')[0:-2]<CR>
 inoremap <F6> <C-R>=system('date')[0:-2]<CR> 
 nnoremap <leader>ig :GundoToggle<CR>     
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim    " for ctrlp
-let NERDTreeIgnore = ['\.pyc$']             " for NERDTree (duh) 
-
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 if &diff
     " diff mode
     set diffopt+=iwhite
 endif
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim " for ctrlp
+let NERDTreeIgnore = ['\.pyc$']          " for NERDTree (duh)
+let g:syntastic_python_checkers = ['pylint']

@@ -24,8 +24,15 @@ set -o vi
 
 export EDITOR=vim
 
-if [[ -e ~/.bash_overrides.sh ]]; then
-    source ~/.bash_overrides.sh
+if type virtualenvwrapper.sh &> /dev/null; then
+    # set up virtualenvwrapper if installed
+    export WORKON_HOME=~/devel/python_virtualenvs
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+    source `which virtualenvwrapper.sh`
+fi 
+
+if [[ -e ~/.bash_overrides ]]; then
+    source ~/.bash_overrides
 fi
 
 # if doge MOTD exists; print it
