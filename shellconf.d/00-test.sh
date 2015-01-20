@@ -1,0 +1,3 @@
+function fart() {
+    echo "fart!"
+}
