@@ -30,3 +30,4 @@ fi
 
 # if doge MOTD exists; print it
 type doge &> /dev/null && doge
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

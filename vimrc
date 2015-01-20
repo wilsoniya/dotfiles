@@ -14,7 +14,7 @@ Bundle 'mattn/emmet-vim.git'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
-Bundle 'snipmate-snippets'
+Bundle "honza/vim-snippets"
 Bundle 'ack.vim'
 Bundle 'The-NERD-Commenter'
 Bundle 'The-NERD-tree'
@@ -27,6 +27,8 @@ Bundle 'Syntastic'
 Bundle 'Gundo'
 Bundle 'vim-coffee-script'
 Bundle 'tpope/vim-dispatch'
+Bundle 'JuliaLang/julia-vim'
+Bundle 'tpope/vim-surround'
 
 Bundle 'molokai'
 Bundle 'Mustang2'
@@ -34,6 +36,7 @@ Bundle 'inkpot'
 Bundle 'wombat256.vim'
 Bundle 'w0ng/vim-hybrid' 
 Bundle 'sickill/vim-monokai' 
+Bundle 'whatyouhide/vim-gotham' 
 
 filetype plugin indent on                   " vundle required!
 
@@ -105,3 +108,8 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim    " for ctrlp
 let NERDTreeIgnore = ['\.pyc$']             " for NERDTree (duh) 
 
 autocmd BufWritePre *.py :%s/\s\+$//e
+
+if &diff
+    " diff mode
+    set diffopt+=iwhite
+endif
