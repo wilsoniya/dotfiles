@@ -51,9 +51,16 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
+
+# for some reason this must come before the sourcing of oh-my-zsh.sh 
+if [[ -d ~/dotfiles/shellconf.d ]]; then
+    for file in $(find ~/dotfiles/shellconf.d -name "*.sh" | sort); do
+        source "${file}"
+    done 
+fi
+
+source $ZSH/oh-my-zsh.sh 
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -72,14 +79,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-if [[ -d ~/dotfiles/shellconf.d ]]; then
-    for file in $(find ~/dotfiles/shellconf.d -name "*.sh"); do
-        source "$file"
-    done 
-fi
+# export SSH_KEY_PATH="~/.ssh/dsa_id" 
 
 bindkey -v
 bindkey '^R' history-incremental-pattern-search-backward 
-
