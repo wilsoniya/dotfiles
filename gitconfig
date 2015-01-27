@@ -6,4 +6,7 @@
 [color]
 	ui = true
 [diff]
-    tool = vimdiff
+	tool = vimdiff
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
