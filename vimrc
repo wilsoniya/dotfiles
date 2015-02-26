@@ -26,11 +26,13 @@ Bundle 'Gundo'
 Bundle 'tpope/vim-dispatch'
 Bundle 'JuliaLang/julia-vim'
 Bundle 'tpope/vim-surround'
+Plugin 'snipmate-snippets'
 
 Bundle 'motus/pig.vim'
 Bundle 'dart-lang/dart-vim-plugin'
 Bundle 'vim-coffee-script'
 Bundle 'mitsuhiko/vim-jinja'
+Plugin 'wting/rust.vim'
 
 Bundle 'molokai'
 Bundle 'Mustang2'
