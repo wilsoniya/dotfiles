@@ -1,48 +1,46 @@
 set nocompatible                        " be iMproved
 filetype off                            " vundle required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set rtp+=~/.vim/bundle/vundle/
+" call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'ctrlp.vim'
-Bundle 'bufexplorer.zip'
-Bundle 'mattn/emmet-vim.git'            
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
-Bundle "honza/vim-snippets"
-Bundle 'ack.vim'
-Bundle 'The-NERD-Commenter'
-Bundle 'The-NERD-tree'
-Bundle 'fugitive.vim'
-Bundle 'rking/ag.vim'
-Bundle 'pythonhelper'
-Bundle 'Syntastic'
-Bundle 'Gundo'
-Bundle 'tpope/vim-dispatch'
-Bundle 'JuliaLang/julia-vim'
-Bundle 'tpope/vim-surround'
-Plugin 'snipmate-snippets'
+Plugin 'ctrlp.vim'
+Plugin 'bufexplorer.zip'
+Plugin 'mattn/emmet-vim.git'            
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'ack.vim'
+Plugin 'The-NERD-Commenter'
+Plugin 'The-NERD-tree'
+Plugin 'fugitive.vim'
+Plugin 'rking/ag.vim'
+Plugin 'pythonhelper'
+Plugin 'Syntastic'
+Plugin 'Gundo'
+Plugin 'tpope/vim-dispatch'
 
-Bundle 'motus/pig.vim'
-Bundle 'dart-lang/dart-vim-plugin'
-Bundle 'vim-coffee-script'
-Bundle 'mitsuhiko/vim-jinja'
-Plugin 'wting/rust.vim'
+Plugin 'motus/pig.vim'
+Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'vim-coffee-script'
+Plugin 'mitsuhiko/vim-jinja'
 
-Bundle 'molokai'
-Bundle 'Mustang2'
-Bundle 'inkpot'
-Bundle 'wombat256.vim'
-Bundle 'w0ng/vim-hybrid' 
-Bundle 'sickill/vim-monokai' 
-Bundle 'whatyouhide/vim-gotham' 
+Plugin 'molokai'
+Plugin 'Mustang2'
+Plugin 'inkpot'
+Plugin 'wombat256.vim'
+Plugin 'w0ng/vim-hybrid' 
+Plugin 'sickill/vim-monokai' 
 
 filetype plugin indent on                   " vundle required!
+call vundle#end()                           " required
 
 " Basics
 syntax on                                   " syntax highlighting
