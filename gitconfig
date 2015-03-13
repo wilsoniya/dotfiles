@@ -2,7 +2,7 @@
 	email = wilsoniya@gmail.com
 	name = Michael Wilson
 [push]
-	default = matching
+	default = simple
 [color]
 	ui = true
 [diff]
