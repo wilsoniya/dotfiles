@@ -6,5 +6,6 @@ pulseaudio --start &
 clipit -d &
 xscreensaver &
 xss-lock -- xscreensaver-command -lock &
+dunst &
 
 exec i3
