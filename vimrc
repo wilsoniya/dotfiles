@@ -95,6 +95,7 @@ colorscheme monokai
 set cryptmethod=blowfish                    " use strong, blowfish encryption
 
 "manual filetype recognition
+autocmd! BufNewFile,BufRead *.nim setlocal ft=nim
 "autocmd BufNewFile,BufRead *.vb set ft=vbnet
 "autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 
