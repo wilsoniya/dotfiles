@@ -2,7 +2,7 @@
 	email = wilsoniya@gmail.com
 	name = Michael Wilson
 [push]
-	default = simple
+	default = current
 [color]
 	ui = true
 [diff]
@@ -11,12 +11,6 @@
 	snake = ! /home/mwilson/.snakegit/vendor/python/bin/snake
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-[github]
-	user =
-	token = 399023667cb28fb5c183fdd80d687eefe17e23bd
-	url = https://api.github.com/authorizations/14485450
-[pypi]
-	user = nsapp
-	key = nsapp
 [core]
 	excludesfile = /home/mwilson/.gitignore_global
+    lura = log --graph --all --format='%C(auto)%h [%Cblue%an %Creset⧗ %Cgreen%ar%C(reset)%C(auto)] → %s%d' --color

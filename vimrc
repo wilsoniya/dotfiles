@@ -32,6 +32,7 @@ Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'vim-coffee-script'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'zah/nimrod.vim'
+Plugin 'rust-lang/rust.vim'
 
 Plugin 'molokai'
 Plugin 'Mustang2'
