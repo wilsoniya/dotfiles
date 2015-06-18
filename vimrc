@@ -29,10 +29,10 @@ Plugin 'tpope/vim-dispatch'
 
 Plugin 'motus/pig.vim'
 Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'vim-coffee-script'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'zah/nimrod.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'kchmck/vim-coffee-script'
 
 Plugin 'molokai'
 Plugin 'Mustang2'
@@ -46,6 +46,8 @@ call vundle#end()                           " required
 
 " Basics
 syntax on                                   " syntax highlighting
+filetype off
+filetype on
 set synmaxcol=200                           " maximum line length for syntax highlighting
 set ttyfast                                 " fast terminal connection
 set ttyscroll=3                             " maximum number of lines to scroll before forcing a redraw
