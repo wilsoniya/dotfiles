@@ -49,7 +49,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git vagrant)
 
 # User configuration
 
@@ -82,4 +82,5 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 bindkey -v
+bindkey -M vicmd v edit-command-line
 bindkey '^R' history-incremental-pattern-search-backward

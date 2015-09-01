@@ -8,4 +8,7 @@ xscreensaver &
 xss-lock -- xscreensaver-command -lock &
 dunst &
 
+# disable system bell
+xset -b
+
 exec i3
