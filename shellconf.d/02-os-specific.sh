@@ -7,3 +7,9 @@ if [[ $OS == "Linux" ]]; then
     fi
 fi
 
+if type curl > /dev/null; then
+    my_ip() {
+        echo $(curl --silent https://api.ipify.org)
+    }
+fi
+
