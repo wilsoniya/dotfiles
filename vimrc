@@ -27,6 +27,7 @@ Plugin 'Syntastic'
 Plugin 'Gundo'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'mtth/scratch.vim'
 
 Plugin 'motus/pig.vim'
 Plugin 'dart-lang/dart-vim-plugin'
