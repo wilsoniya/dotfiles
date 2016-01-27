@@ -36,6 +36,7 @@ Plugin 'zah/nimrod.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'kchmck/vim-coffee-script'
 "Plugin 'MarcWeber/vim-addon-nix'
+Plugin 'LnL7/vim-nix'
 
 Plugin 'molokai'
 Plugin 'Mustang2'
@@ -114,6 +115,7 @@ inoremap <F5> <C-r>=system('uuidgen -r')[0:-2]<CR>
 inoremap <F6> <C-R>=system('date')[0:-2]<CR>
 nnoremap <leader>ig :GundoToggle<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>h :noh<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
 
