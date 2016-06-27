@@ -9,6 +9,7 @@ clipit -d &
 xscreensaver &
 xss-lock -- xscreensaver-command -lock &
 dunst &
+/home/mwilson/bin/capsmap
 
 # disable system bell
 xset -b

@@ -12,5 +12,3 @@ PS1='[\u@\h \W]\$ '
 set -o vi
 
 export EDITOR=vim
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
