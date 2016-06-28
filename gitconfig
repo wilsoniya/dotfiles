@@ -13,6 +13,7 @@
     lura = log --graph --all --format='%C(auto)%h [%Cblue%an %Creset⧗ %Cgreen%ar%C(reset)%C(auto)] → %s%d' --color
     lur = log --graph --format='%C(auto)%h [%Cblue%an %Creset⧗ %Cgreen%ar%C(reset)%C(auto)] → %s%d' --color
 [core]
-	excludesfile = /home/mwilson/.gitignore_global
+	excludesfile = ~/.gitignore
+	quotepath = false
 [include]
     path = ~/.ns_gitconfig

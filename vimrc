@@ -27,6 +27,7 @@ Plugin 'Syntastic'
 Plugin 'Gundo'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'racer-rust/vim-racer'
 
 Plugin 'motus/pig.vim'
 Plugin 'dart-lang/dart-vim-plugin'
@@ -34,6 +35,7 @@ Plugin 'mitsuhiko/vim-jinja'
 Plugin 'zah/nimrod.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'leafgarland/typescript-vim'
 "Plugin 'MarcWeber/vim-addon-nix'
 
 Plugin 'molokai'
@@ -124,3 +126,10 @@ endif
 set runtimepath^=~/.vim/bundle/ctrlp.vim " for ctrlp
 let NERDTreeIgnore = ['\.pyc$']          " for NERDTree (duh)
 let g:syntastic_python_checkers = ['pylint']
+
+"for vim-racer
+let g:racer_cmd = "/home/wilsoniya/Devel/oss/racer/target/release/racer"
+let $RUST_SRC_PATH="/home/wilsoniya/Devel/oss/rust/src"
+
+" gp = selelect text that was just pasted
+nnoremap gp `[v`]
