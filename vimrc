@@ -35,10 +35,9 @@ Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'mitsuhiko/vim-jinja'
 Plugin 'zah/nimrod.vim'
 Plugin 'rust-lang/rust.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'leafgarland/typescript-vim'
 "Plugin 'MarcWeber/vim-addon-nix'
 Plugin 'LnL7/vim-nix'
+Plugin 'leafgarland/typescript-vim'
 
 Plugin 'molokai'
 Plugin 'Mustang2'
@@ -121,10 +120,10 @@ nnoremap <leader>h :noh<CR>
 
 autocmd BufWritePre * :%s/\s\+$//e
 
-if &diff
-    " diff mode
-    set diffopt+=iwhite
-endif
+"if &diff
+"    " diff mode
+"    set diffopt+=iwhite
+"endif
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim " for ctrlp
 let NERDTreeIgnore = ['\.pyc$']          " for NERDTree (duh)
