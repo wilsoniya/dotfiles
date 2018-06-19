@@ -1,10 +1,10 @@
 export EDITOR=vim
 export OS=$(uname -s)
 
-if [[ ! "256" == *256* ]]; then
-    # case: not using a 256 color term; set a 256 color term
-    export TERM=xterm-256color
-fi
+#if [[ ! "256" == *256* ]]; then
+#    # case: not using a 256 color term; set a 256 color term
+#    export TERM=xterm-256color
+#fi
 
 
 # ssh-agent connection, if available
