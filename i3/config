@@ -150,7 +150,7 @@ bar {
         status_command i3status
 }
 
-bindsym $mod+Shift+End exec "xscreensaver-command -lock"
+bindsym $mod+Shift+End exec xsecurelock
 bindsym $mod+p exec "cmus-remote -u"
 #bindsym $mod+s exec view
 

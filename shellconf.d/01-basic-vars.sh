@@ -1,11 +1,7 @@
 export EDITOR=vim
 export OS=$(uname -s)
 
-#if [[ ! "256" == *256* ]]; then
-#    # case: not using a 256 color term; set a 256 color term
-#    export TERM=xterm-256color
-#fi
-
+export TERM=xterm
 
 # ssh-agent connection, if available
 if [[ -e "${XDG_RUNTIME_DIR}/ssh-agent.socket" ]]; then
