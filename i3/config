@@ -160,7 +160,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86MonBrightnessUp exec /bin/light -A 5
 bindsym XF86MonBrightnessDown exec /bin/light -U 5
 
-bindsym XF86Sleep exec xscreensaver-command -lock && systemctl suspend
+bindsym XF86Sleep exec systemctl suspend
+# 'P' button on blue
+bindsym XF86Launch2 exec xsecurelock
 
 bindsym $mod+m exec "pcmanfm"
 
