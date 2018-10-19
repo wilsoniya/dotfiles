@@ -157,8 +157,8 @@ bindsym $mod+p exec "cmus-remote -u"
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 
-bindsym XF86MonBrightnessUp exec /etc/light/light -a 5
-bindsym XF86MonBrightnessDown exec /etc/light/light -s 5
+bindsym XF86MonBrightnessUp exec /bin/light -A 5
+bindsym XF86MonBrightnessDown exec /bin/light -U 5
 
 bindsym XF86Sleep exec xscreensaver-command -lock && systemctl suspend
 
