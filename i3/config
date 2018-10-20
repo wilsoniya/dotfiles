@@ -142,7 +142,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -150,19 +149,21 @@ bar {
         status_command i3status
 }
 
-bindsym $mod+Shift+End exec xsecurelock
-bindsym $mod+p exec "cmus-remote -u"
+# Note: use `xev` to discover XF86 keysyms
+bindsym $mod+Shift+End exec --no-startup-id xsecurelock
 #bindsym $mod+s exec view
-
+bindsym $mod+r mode "resize"
+bindsym $mod+p exec --no-startup-id "cmus-remote -u"
+bindsym XF86AudioPlay exec --no-startup-id "cmus-remote -u"
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
 
-bindsym XF86MonBrightnessUp exec /bin/light -A 5
-bindsym XF86MonBrightnessDown exec /bin/light -U 5
+bindsym XF86MonBrightnessUp exec --no-startup-id /bin/light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id /bin/light -U 5
 
-bindsym XF86Sleep exec systemctl suspend
+bindsym XF86Sleep exec --no-startup-id systemctl suspend
 # 'P' button on blue
-bindsym XF86Launch2 exec xsecurelock
+bindsym XF86Launch2 exec --no-startup-id xsecurelock
 
 bindsym $mod+m exec "pcmanfm"
 
